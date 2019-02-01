@@ -5,7 +5,7 @@ function displayButtons() {
 	for (i = 0; i < foodList.length; i++) {
 		var button = $("<button>");
 		button.addClass("food");
-		button.addClass("btn btn-primary")
+		button.addClass("btn btn-primary");
 		button.attr("food-name", foodList[i]);
 		button.text(foodList[i]);
 		$(".gif-buttons").append(button);
@@ -26,7 +26,7 @@ function renderButtons() {
 			for (i = 0; i < results.length; i++) {
 				var gifDiv = $("<div>");
 				var foodGif = $("<img>");
-				foodGif.addClass("food-gif")
+				foodGif.addClass("food-gif");
 				foodGif.attr("src", results[i].images.fixed_height.url);
 				gifDiv.append(foodGif);
 				$("#gifs").prepend(gifDiv);
@@ -59,8 +59,7 @@ window.onload = function() {
 				displayButtons();
 				renderButtons();	
 				return(false);
-	
 			};
 		};
 	});
-}
+};
